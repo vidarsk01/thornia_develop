@@ -817,14 +817,6 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.getAbilities().specializedMagicLevel[combatTypeToIndex(COMBAT_ICEDAMAGE)] += pugi::cast<int16_t>(valueAttribute.value());
 		} else if (tmpStrValue == "physicalmagiclevelpoints") {
 			it.getAbilities().specializedMagicLevel[combatTypeToIndex(COMBAT_PHYSICALDAMAGE)] += pugi::cast<int16_t>(valueAttribute.value());
-		} else if (tmpStrValue == "magicshieldcapacitypercent") {
-			it.getAbilities().magicShieldCapacityPercent += pugi::cast<int16_t>(valueAttribute.value());
-		} else if (tmpStrValue == "magicshieldcapacityflat") {
-			it.getAbilities().magicShieldCapacityFlat += pugi::cast<int16_t>(valueAttribute.value());
-		} else if (tmpStrValue == "perfectshotdamage") {
-			it.getAbilities().perfectShotDamage = pugi::cast<int16_t>(valueAttribute.value());
-		} else if (tmpStrValue == "perfectshotrange") {
-			it.getAbilities().perfectShotRange = pugi::cast<int16_t>(valueAttribute.value());
 		} else if (tmpStrValue == "cleavepercent") {
 			it.getAbilities().cleavePercent += pugi::cast<int16_t>(valueAttribute.value());
 		} else if (tmpStrValue == "damagereflection") {
